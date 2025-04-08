@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترك تعليق </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>طلب الطعام 🍽️</h1>
+        </header>
+        <form>
+            <div class="feedback-form">
+                <div class="order-form">
+                    <label for="name">✨ الاسم:</label>
+                    <input type="text" id="name" class="input-field" required placeholder="أدخل اسمك هنا...">
+                </div>
+                <div class="order-form">
+                    <label for="rating">⭐ عدد النجمات:</label>
+                    <select id="rating" class="dropdown-field" required>
+                        <option value="1">⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="5" selected>⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">رأيك:</label>
+                    <textarea id="notes" class="textarea-field" rows="4" placeholder="أترك لنا رأيك هنا..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" formaction="./review.html">إرسال التعليق</button>
+                </div>
+            </div>
+        </form>  
+        <button type="submit" class="button"><a href="./index.html">العودة إلى الصفحة الرئيسية</a></button>      
+    </div>
+</body>
+</html>

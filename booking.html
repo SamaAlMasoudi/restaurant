@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب الطعام 🍽️</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مطعم البراق 🌟</h1>
+            <p>تجربة طعام راقية وفاخرة في كل قضمة 🍴</p>
+        </header>
+        <section class="description">
+            <h2>وصف المطعم 🏛️</h2>
+            <p>
+                مطعم البراق هو وجهتك المثالية لتجربة 
+                طعام ساحرة تجمع بين النكهات التقليدية 
+                والأجواء الفاخرة. نحن نقدم مجموعة 
+                متنوعة من الأطباق المعدة من أفضل 
+                المكونات الطازجة، مما يضمن لك تجربة 
+                لا تُنسى. استمتع بأشهى المأكولات 
+                العربية والعالمية في أجواء دافئة ومرحبة. 🍲
+            </p>
+            <div class="question">
+                <p>هل شاهدت قائمة الأطباق؟</p>
+                <button type="button"><a href="#sections">لا، أرني القائمة</a></button>
+                <button type="button" onclick="alert('شكرًا لك! سنقوم بمعالجة طلبك. فقط قم بملىء الاستبيان التالي.')">نعم، أكمل الطلب</button>
+            </div>
+        </section>
+        <header>
+            <h1>طلب الطعام 🍽️</h1>
+        </header>
+        <form >
+            <div class="order-form">
+                <div>
+                    <label for="name">✨ الاسم:</label>
+                    <input type="text" id="name" required placeholder="أدخل اسمك هنا...">
+                </div>
+                <div class="order-form">
+                    <div>
+                        <label for="address">العنوان:</label>
+                        <input type="text" id="address" name="address" required placeholder=" أدخل عنوانك هنا ...">
+                    </div>
+                    <div class="order-form">
+                    <div>
+                        <label for="number">📞 رقم الهاتف:</label>
+                        <input type="number" id="number" required placeholder="أدخل رقم هاتفك هنا...">
+                    </div>
+                </div>
+            <label for="dish">اختر الأكلة:</label>
+            <select id="dish" name="dish" required  multiple size="3">
+                <option value="زربيان" data-price="$15">زربيان - $15</option>
+                <option value="كباب مقلي" data-price="$12">كباب مشوي - $12</option>
+                <option value="سلطة فواكه" data-price="$8">سلطة فواكه - $8</option>
+                <option value="دجاج مشوي" data-price="$18">دجاج محشي - $18</option>
+            </select>
+
+            <label for="notes">ملاحظات:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="ملاحظات إضافية..."></textarea>
+            
+            <div class="form-group">
+                <button type="submit"><a href="./response.html"> تأكيد الطلب</a></button>
+            </div>
+        </form>
+        <button type="submit" class="button"><a href="./index.html">العودة إلى الصفحة الرئيسية</a></button>
+    </div>
+</body>
+</html>
+
